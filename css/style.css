@@ -64,7 +64,7 @@ body {
 }
 :root {
     --main-color:#DDA939;
-    --second-color:#173057;
+    --second-color:#fff;
     --link-color:#173057;
     --border-color:#9494941f;
     --main-font:'vip', sans-serif;
@@ -84,10 +84,7 @@ img {
     transition: all 0.5s;
     color: var(--main-color);
 }
-::selection {
-    background-color: var(--second-color);
-    color: var(--main-color);
-}
+
 /* typography */
 
 /* headings */
@@ -4391,4 +4388,7 @@ input[type="checkbox"] {
 }
 .slide-num span {
     font-family: 'Oswald', sans-serif;
+}
+.item {
+    padding: 15px;
 }

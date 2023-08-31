@@ -60,7 +60,7 @@ body {
 
 @font-face {
     font-family: 'vip';
-    src: url(/fonts/VIP\ Rawy\ Regular.otf);
+    src: url(../fonts/VIPRawyRegular.otf);
 }
 :root {
     --main-color:#DDA939;

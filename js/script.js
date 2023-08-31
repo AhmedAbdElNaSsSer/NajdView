@@ -602,3 +602,6 @@ function activeLink() {
         }
     })
 } activeLink()
+// let array = [1,2,3,4]
+// const randomIndex = Math.floor(Math.random() * array.length);
+// const randomObject = array[randomIndex];

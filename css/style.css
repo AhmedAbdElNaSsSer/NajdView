@@ -203,7 +203,7 @@ a:focus {
     min-height: 100vh;
     overflow: hidden;
 }
-.main-font {
+.main-font, .mfp-counter {
     font-family: 'Oswald', sans-serif !important;
 }
 .dark {
@@ -256,7 +256,7 @@ a:focus {
 }
 
 :root {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 .valign {
@@ -585,7 +585,7 @@ input[type="checkbox"] {
 }
 
 .link-btn i {
-    margin-left: 5px;
+    margin-right: 5px;
     font-size: 10px;
 }
 
@@ -2563,27 +2563,62 @@ input[type="checkbox"] {
 /* services images */
 
 .services .bg-1 {
-    background-image: url(../images/slider/1.jpg);
+    background-image: url(../images/services/1.jpg);
+    height: 294px;
 }
 
 .services .bg-2 {
-    background-image: url(../images/slider/2.jpg);
+    background-image: url(../images/services/2.jpg);
+    height: 294px;
 }
 
 .services .bg-3 {
-    background-image: url(../images/slider/3.jpg);
+    background-image: url(../images/services/3.jpg);
+    height: 294px;
 }
 
 .services .bg-4 {
-    background-image: url(../images/slider/4.jpg);
+    background-image: url(../images/services/4.jpg);
+    height: 294px;
 }
 
 .services .bg-5 {
-    background-image: url(../images/slider/5.jpg);
+    background-image: url(../images/services/5.jpg);
+    height: 294px;
 }
 
 .services .bg-6 {
-    background-image: url(../images/slider/6.jpg);
+    background-image: url(../images/services/6.jpg);
+    height: 294px;
+}
+.services .bg-7 {
+    background-image: url(../images/services/7.jpg);
+    height: 294px;
+}
+
+.services .bg-8 {
+    background-image: url(../images/services/8.jpg);
+    height: 294px;
+}
+
+.services .bg-9 {
+    background-image: url(../images/services/9.jpg);
+    height: 294px;
+}
+
+.services .bg-10 {
+    background-image: url(../images/services/10.jpg);
+    height: 294px;
+}
+
+.services .bg-11 {
+    background-image: url(../images/services/11.jpg);
+    height: 294px;
+}
+
+.services .bg-12 {
+    background-image: url(../images/services/12.jpg);
+    height: 294px;
 }
 
 /* ======= Projects style ======= */
@@ -2605,6 +2640,17 @@ input[type="checkbox"] {
     height: 410px;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.index .projects .items img {
+    width: 100%;
+    height: 410px;
+    -o-object-fit: contain;
+    object-fit: contain;
     -o-object-position: center;
     object-position: center;
     -webkit-transition: all .5s;
@@ -2786,6 +2832,9 @@ input[type="checkbox"] {
     position: absolute;
     right: 40px;
     top: 80px;
+    background: white;
+    padding: 10px 25px;
+    box-shadow: 0px 0px 15px 0px #8080804a;
 }
 
 .project2-link {
@@ -3215,6 +3264,11 @@ input[type="checkbox"] {
     overflow: hidden;
 }
 
+.gallery-img img {
+    width: 550px;
+    height: 500px;
+}
+
 .gallery-box .gallery-img:after {
     content: " ";
     display: block;
@@ -3629,7 +3683,7 @@ input[type="checkbox"] {
 }
 
 .blog .wrap .con .date span {
-    margin: 0 2px 0 12px;
+    margin: 0 12px 0 5px;
     color: var(--main-color);
 }
 
@@ -3640,10 +3694,13 @@ input[type="checkbox"] {
     line-height: 1.5em;
     font-family: var(--main-font);
     text-transform: uppercase;
-    
+    text-align: right;
     margin-bottom: 20px;
 }
 
+.ptr {
+    text-align: right;
+}
 /* blog sidebar style */
 
 .sidebar .search-box {
@@ -3662,7 +3719,7 @@ input[type="checkbox"] {
 .sidebar .search-box .icon {
     position: absolute;
     top: 50%;
-    right: 15px;
+    left: 15px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -3734,7 +3791,7 @@ input[type="checkbox"] {
 }
 
 .sidebar .widget.last-post-thum .item .cont {
-    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .sidebar .widget.last-post-thum .item .cont h6,
@@ -3838,7 +3895,7 @@ input[type="checkbox"] {
 }
 
 .post .date span {
-    margin: 0 2px 0 12px;
+    margin: 0 12px 0 2px;
     color: var(--main-color);
 }
 
@@ -4436,4 +4493,23 @@ input[type="checkbox"] {
     width: 100%;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.text-right {
+    text-align: right;
+}
+.partnerImg {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.partnerImg img {
+    width: 100%;
+    height: 100%;
+}
+.logo-roea {
+    width: 80px;
+}
+.navbar-nav {
+    padding: 0 10px;
 }

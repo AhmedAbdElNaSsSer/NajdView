@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <title>ArchSan Architecture</title>
+    <title>Najd View</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,300;1,400&family=Oswald:wght@300;400&display=swap">
@@ -21,7 +21,7 @@
     <link rel=stylesheet href="css/style.css">
 </head>
 
-<body>
+<body class="jobForm" id="jobForm">
     <div class="content-wrapper">
         <!-- Preloader -->
         <div class="preloader-bg"></div>
@@ -42,30 +42,28 @@
                 <div class="content-lines"></div>
             </div>
         </div>
-        <!-- Navbar -->
+<!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Logo -->
-                <div class="logo-wrapper">
-                    <a class="logo" href="index.html"> <img src="images/logo.png" class="logo-img" alt=""> </a>
+                <div class="logo-roea">
+                    <img src="images/ro'ea.png" alt="">
                     <!-- <a class="logo" href="index.html"> <h2>ArchSan <span>Architecture</span></h2> </a> -->
                 </div>
-                <div class="logo-roea order-lg-3">
-                    <img src="images/ro'ea.png" alt="">
+                <div class="logo-wrapper order-lg-3">
+                    <a class="logo" href="index.html"> <img src="images/logo.png" class="logo-img" alt=""> </a>
                 </div>
                 <!-- Button -->
                 <button class="navbar-toggler order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
                 <!-- Menu -->
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav m-auto" dir="rtl">
-                        <li class="nav-item">
-                            <a class="nav-link linkNav" href="index.html">الرئيسية</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link linkNav" href="about.html">نحن</a></li>
+                        <li class="nav-item"><a class="nav-link linkNav" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link linkNav" href="about.html">من نحن</a></li>
                         <li class="nav-item"><a class="nav-link linkNav" href="services.html">خدماتنا</a></li>
                         <li class="nav-item"> <a class="nav-link linkNav" href="projects.html">اعمالنا</a></li>
-                        <li class="nav-item"> <a class="nav-link linkNav" href="blog.html">المدونة</a></li>
-                        <li class="nav-item"> <a class="nav-link linkNav" href="gallery.html">المعرض</a></li>
+                        <li class="nav-item"> <a class="nav-link linkNav" href="galleryHome.html">المعرض</a></li>
+                        <li class="nav-item"> <a class="nav-link linkNav" href="blog.html">المقالات</a></li>
                         <li class="nav-item"> <a class="nav-link linkNav" href="job.html">التوظيف</a></li>
                         <li class="nav-item"> <a class="nav-link linkNav" href="faq.html">الاسئلة</a></li>
                         <li class="nav-item"><a class="nav-link linkNav" href="contact.html">التواصل</a></li>
@@ -100,7 +98,7 @@
                 <!-- Form elements -->
                 <div class="row">
                     <div class="col-md-12 form-group">
-                        <select name="" id="jobType">
+                        <select name="" class="px-0" id="jobType">
                             <option selected disabled>أختر الوظيفة</option>
                             <option>مهندس معماري</option>
                             <option value="">مهندس إنشائي</option>
@@ -112,22 +110,77 @@
                         <input name="name" type="text" placeholder="الاسم بالكامل *" required>
                     </div>
                     <div class="col-md-6 form-group">
-                        <input name="phone" type="text" placeholder="رقم الجوال *" required>
+                        <input name="phone" type="number" placeholder="رقم الجوال *" class="main-font" required>
                     </div>
                     <div class="col-md-12 form-group">
                         <input name="email" type="email" placeholder="الايميل *" required>
                     </div>
                     <div class="col-md-6 form-group">
-                        <input name="subject" type="text" placeholder="البلد *" required>
+                        <select name="country">
+                            <option selected disabled value="empty">اختر الدولة *</option>
+                            <option  data-value="مصر" value="Egypt">مصر</option>
+                            <option  data-value="الجزائر" value="Algeria">الجزائر</option>
+                            <option  data-value="البحرين" value="Bahrain">البحرين</option>
+                            <option  data-value="جزر القمر" value="Comoros">جزر القمر</option>
+                            <option  data-value="جيبوتي" value="Djibouti">جيبوتي</option>
+                            <option  data-value="الأردن" value="Jordan">الأردن</option>
+                            <option  data-value="الكويت" value="Kuwait">الكويت</option>
+                            <option  data-value="لبنان" value="Lebanon">لبنان</option>
+                            <option  data-value="ليبيا" value="Libya">ليبيا</option>
+                            <option  data-value="موريتانيا" value="Mauritania">موريتانيا</option>
+                            <option  data-value="المغرب" value="Morocco">المغرب</option>
+                            <option  data-value="عمان" value="Oman">عمان</option>
+                            <option  data-value="قطر" value="Qatar">قطر</option>
+                            <option  data-value="المملكة العربية السعودية" value="SaudiArabia">المملكة العربية السعودية</option>
+                            <option  data-value="الصومال" value="Somalia">الصومال</option>
+                            <option  data-value="السودان" value="Sudan">السودان</option>
+                            <option  data-value="سوريا" value="Syria">سوريا</option>
+                            <option  data-value="تونس" value="Tunisia">تونس</option>
+                            <option  data-value="الإمارات العربية المتحدة" value="UnitedArabEmirates">الإمارات العربية المتحدة</option>
+                            <option  data-value="اليمن" value="Yemen">اليمن</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group notall">
+                        <select name="city" class="dis">
+                            <option value="empty" selected disabled>المدينة *</option>
+                        </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <input name="subject" type="text" placeholder="المدينة *" required>
+                        <select name="subject" id="subject">
+                            <option value="empty">المؤهل العلمي</option>
+                            <option value="empty">التعليم الابتدائي</option>
+                            <option value="empty">التعليم المتوسط</option>
+                            <option value="empty">التعليم الثانوي</option>
+                            <option value="empty">حاصل علي البكالوريوس</option>
+                            <option value="empty">حاصل علي الماجستير</option>
+                            <option value="empty">حاصل علي الدكتوراه</option>
+                        </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <input name="subject" type="text" placeholder="التعليم *" required>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <input name="subject" type="text" placeholder="الخبرة *" required>
+                        <select name="expYears" id="expYears">
+                            <option value="" selected disabled>عدد سنين الخبرة</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="اكثر من 20">اكثر من 20</option>
+                        </select>
                     </div>
                     <div class="col-md-12 form-group">
                         <input type="file" name="" id="">
@@ -167,7 +220,7 @@
                                         <input class="line-gray" name="name" type="text" placeholder="الاسم بالكامل *" required="">
                                     </div>
                                     <div class="col-md-3 form-group">
-                                        <input class="line-gray" name="phone" type="text" placeholder="رقم الجوال *" required="">
+                                        <input class="line-gray main-font" name="phone" type="number" placeholder="رقم الجوال *" required="">
                                     </div>
                                     <div class="col-md-2">
                                         <input class="line-gray" name="submit" type="submit" value="ارسال">
@@ -179,7 +232,7 @@
                 </div>
             </div>
         </section>
-        <!-- Footer -->
+<!-- Footer -->
         <footer class="footer" dir="rtl">
             <div class="top">
                 <div class="container">
@@ -221,7 +274,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <p>كل الحقوق محفوطة باسم <a href="https://www.linkedin.com/in/ahmedabdelnasser-860927212/" target="_blank">Ahmed AbdElNasser</a></p>
+                            <p>كل الحقوق محفوطة باسم <a href="https://www.linkedin.com/in/ahmedabdelnasser-860927212/" target="_blank">Ahmed AbdElNasser</a> لسنة <span class="year main-font"></span></p>
                         </div>
                         <div class="col-md-4">
                             <ul class="social-left d-flex justify-content-between fs-5 clearfix flex-row">

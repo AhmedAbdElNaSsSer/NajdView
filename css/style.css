@@ -3462,8 +3462,8 @@ input[type="checkbox"] {
 }
 
 .contact .social a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     line-height: 40px;
     text-align: center;
     font-size: 12px;
@@ -4556,4 +4556,8 @@ input[type="checkbox"] {
     background-color: transparent;
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+.socialIcons a {
+    display: block;
+    width: 25px;
 }

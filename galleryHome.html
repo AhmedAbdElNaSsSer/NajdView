@@ -94,72 +94,13 @@
                         <div class="section-title"><span>تصاميمنا</span> المتميزة</div>
                     </div>
                 </div>
-                <div class="btnAll text-center mb-5">
+                <!-- <div class="btnAll text-center mb-5">
                     <a href="gallery.html" class="main-btn">شاهد كل التصاميم</a>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-                        <div class="owl-carousel owl-theme">
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="con mt-3">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="con mt-3">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/2.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="con mt-3">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/3.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="con mt-3">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/4.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/5.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="con mt-3">
-                                    <div class="img">
-                                        <img width="100%" height="100%" src="images/indexGallery/5.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="owl-carousel owl-theme" id="imageCarousel">
+                            <!-- Images will be dynamically added here -->
                         </div>
                     </div>
                 </div>
@@ -275,6 +216,22 @@
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="modules/YouTubePopUp/YouTubePopUp.js"></script>
     <script src="js/script.js"></script>
+    <script>
+    $(document).ready(function () {
+        const imageCarousel = $('#imageCarousel');
+        const numberOfImages = 68;
+        const imagePath = 'images/indexGallery/';
+
+        for (let i = 1; i <= numberOfImages; i++) {
+            const imageName = i.toString().padStart(3, '0');
+            const imageUrl = `${imagePath}${imageName}.jpg`;
+            const slide = document.createElement('img');
+            slide.src = imageUrl;
+            imageCarousel.trigger('add.owl.carousel', [slide]).trigger('refresh.owl.carousel');
+        }
+    });
+
+    </script>
 </body>
 
 </html>

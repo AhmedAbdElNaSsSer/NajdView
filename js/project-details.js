@@ -58,6 +58,8 @@ const projects = [
         اسم المالك / حمود بن عبدالرحمن الحازمي 
         <br>
         الموقع / العمارية
+        <br>
+        نوع المشروع / استراحة خاصة 
         `,
         folderName:'hamoudElHazmy',
         imgs: ['069.jpg','070.jpg','071.jpg','072.jpg','073.jpg','074.jpg','075.jpg','076.jpg','077.jpg','078.jpg']
@@ -91,6 +93,19 @@ const projects = [
         `,
         folderName:'mohamedAsker',
         imgs: ['01-min.jpg','02-min.jpg','03-min.jpg','04-min.jpg','05-min.jpg','06-min.jpg','07-min.jpg','08-min.jpg','09-min.jpg','010-min.jpg','011-min.jpg','012-min.jpg','013-min.jpg','014-min.jpg']
+    },
+    project8 = {
+        id: 'proj8',
+        title:`قصر الافراح محمد بن هادي بن عسكر الشمري`,
+        p:`اسم المشروع / قصر الافراح  
+        <br>
+        الموقع /  المنطقة الشرقية بنمدينة حفر الباطن 
+        <br>
+        نوع المشروع / قصر         
+        <br>
+        `,
+        folderName:'palace',
+        imgs: ['001.jpg','002.jpg','003.jpg','004.jpg']
     },
 ]
 let projectDetails = projects.find((project) => {

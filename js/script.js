@@ -685,3 +685,17 @@ if(bodyJob) {
 
 }
 } citiesInCountries()
+
+const inputs = document.querySelectorAll('input[data-type=number]'); // Replace this with your input value
+console.log('input: ', inputs);
+const regex = /^[0-9]+$/;
+
+inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+        if (regex.test(input.value)) {
+            return true
+        } else {
+            input.value = ''
+        }
+    })
+})

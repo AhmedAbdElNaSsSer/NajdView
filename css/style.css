@@ -335,7 +335,7 @@ textarea, .jobForm select {
     border-radius: 0px;
     outline: none;
 }
-input[type="number"]::placeholder {
+input[type="number"]::placeholder, input[type="text"]::placeholder {
     font-family: 'vip', sans-serif;
 }
 input:focus,
@@ -4482,7 +4482,7 @@ input[type="checkbox"] {
 }
 .whatsApp-icon a {
     color: green;
-    width: 50px;
+    width: 70px;
     display: block;
 }
 .whatsApp-icon a:hover {

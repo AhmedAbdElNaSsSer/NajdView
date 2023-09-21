@@ -4588,3 +4588,14 @@ input[type="checkbox"] {
     background: #3a3a3a;
     color: #fff;
 }
+.blog .con:first-child {
+    padding-top: 0;
+}
+.text-cut {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 665px;
+}

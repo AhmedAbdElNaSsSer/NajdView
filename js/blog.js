@@ -32,7 +32,7 @@ const posts = [
 function renderPosts(post) {
     blogContainer.innerHTML += `
     <div class="con">
-    <img src="images/cloudSquare/${post.img}" alt="">
+    <img loading="lazy"  src="images/cloudSquare/${post.img}" alt="">
     <div class="date main-font"> <span class="ti-time"></span> ${post.date} <span class="ti-tag"></span> ${post.category}</div>
     <div class="title">${post.title}</div>
     <p class="ptr text-cut">${post.desc}</p>
@@ -95,7 +95,7 @@ function renderLatestNews() {
         <div class="item">
             <div class="valign">
                 <div class="img">
-                    <a href="post.html"><img src="images/cloudSquare/${post.img}" alt=""></a>
+                    <a href="post.html"><img loading="lazy"  src="images/cloudSquare/${post.img}" alt=""></a>
                 </div>
             </div>
             <div class="cont">

@@ -36,7 +36,7 @@ function getPost() {
 
 function renderPost(post) {
     postContainer.innerHTML = `
-    <img src="images/cloudSquare/${post.img}" class="img-responsive mb-5" alt="">
+    <img loading="lazy"  src="images/cloudSquare/${post.img}" class="img-responsive mb-5" alt="">
     <div class="date"> <span class="ti-tag"></span>  <p class="main-font d-inline fw-normal">${post.date}</p>  <span class="ti-time"></span><p class="d-inline">${post.category}</p></div>
     <h2>${post.title}</h2>
     <p>

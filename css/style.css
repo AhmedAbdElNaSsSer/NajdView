@@ -4522,6 +4522,7 @@ input[type="checkbox"] {
 }
 .logo-roea {
     width: 80px;
+    margin-left: 10px;
 }
 .navbar-nav {
     padding: 0 10px;

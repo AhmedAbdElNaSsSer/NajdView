@@ -138,7 +138,7 @@ p {
     margin: 0 0 20px;
     color: var(--link-color);
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* lists */
@@ -3710,7 +3710,7 @@ input[type="checkbox"] {
     font-family: var(--main-font);
     text-transform: uppercase;
     text-align: right;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .ptr {

@@ -106,7 +106,7 @@ function renderPosts(post) {
     blogContainer.innerHTML += `
     <div class="con mb-5">
     <img src="images/blog/${post.img}" alt="">
-    <div class="date main-font"> <span class="ti-time"></span> ${post.date} <span class="ti-tag"></span> ${post.category}</div>
+    <div class="date main-font"><span class="ti-tag"></span> ${post.category}</div>
     <div class="title">${post.title}</div>
     <p class="ptr text-cut">${post.desc}</p>
     <div class="more text-end"><a href="post.html?${post.id}" class="link-btn" tabindex="0" dir="rtl">اقرأ المزيد<i class="ti-arrow-left"></i></a></div>

@@ -50,7 +50,7 @@ const posts = [
     {
         id:5,
         img:'5.jpg',
-        title:'فلل سكنية حي النهضة',
+        title:'فلل سكنية في حي النهضة',
         date:' 14.11.2023 ',
         category:'سكنى',
         desc:`

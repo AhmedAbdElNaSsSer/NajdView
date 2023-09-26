@@ -4526,6 +4526,19 @@ input[type="checkbox"] {
 .navbar-nav {
     padding: 0 10px;
 }
+.text-cut {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 665px;
+}
+@media (max-width : 992px) {
+    .text-cut {
+        width: auto;
+    }
+}
 @media (min-width:992px) {
     .navbar {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -4538,7 +4551,6 @@ input[type="checkbox"] {
 }
 .notall {
     cursor: not-allowed;
-
 }
 .dis {
     pointer-events: none;
@@ -4590,12 +4602,4 @@ input[type="checkbox"] {
 }
 .blog .con:first-child {
     padding-top: 0;
-}
-.text-cut {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    width: 665px;
 }

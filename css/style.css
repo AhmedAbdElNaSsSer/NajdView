@@ -916,7 +916,7 @@ input[type="checkbox"] {
     text-transform: uppercase;
 }
 
-.nav-scroll .logo-wrapper {}
+/* .nav-scroll .logo-wrapper {} */
 
 .logo-wrapper {
     float: left;
@@ -1082,7 +1082,7 @@ input[type="checkbox"] {
         text-align: left;
         margin-left: 0px;
     }
-    .nav-scroll .logo {}
+    /* .nav-scroll .logo {} */
     .logo-img {
         margin-bottom: 0px;
         width: 165px;
@@ -1560,7 +1560,7 @@ input[type="checkbox"] {
     width: 70px;
 }
 
-.hero .wrap .caption .signature .wrap {}
+/* .hero .wrap .caption .signature .wrap {} */
 
 .hero .wrap .caption .signature .wrap .name {
     color: var(--main-color);
@@ -2281,7 +2281,7 @@ input[type="checkbox"] {
 
 /* ======= Team style ======= */
 
-.team {}
+/* .team {} */
 
 .team .wrap {
     box-sizing: border-box;
@@ -3676,7 +3676,7 @@ input[type="checkbox"] {
 
 /* ======= Blog style ======= */
 
-.blog {}
+/* .blog {} */
 
 .blog .wrap {
     padding-top: 0px;
@@ -4170,7 +4170,7 @@ input[type="checkbox"] {
     border-top: 1px solid rgb(0 0 0 / 3%);
 }
 
-.footer .top {}
+/* .footer .top {} */
 
 .footer .top .item h3 {
     position: relative;

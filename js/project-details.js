@@ -1,7 +1,7 @@
 const projectDetailsContainer = document.querySelector('.about')
 const caption = document.querySelector('.caption')
 const urlId = location.href.split("?")[1]
-const projects = [    
+const projects = [
     project1 = {
         id: 'proj1',
         title:`مجمع مطاعم وكافيهات`,
@@ -27,7 +27,9 @@ const projects = [
         title:`فيلا سكنية`,
         p:`  اسم المشروع / فيلا سكنية
         <br>
-        الموقع / الشقيق`,
+        الموقع / الشقيق
+        <br>
+        نوع المشروع / فيلا سكنية`,
         folderName:'asemHasanZaki',
         imgs: ['01.jpg','02.jpg','03.jpg','04.jpg','06.jpg','07.jpg','08.jpg','09.jpg','010.jpg']
     },
@@ -47,8 +49,6 @@ const projects = [
         p:`اسم المشروع / استراحة 
         <br>
         الموقع / العمارية
-        <br>
-        نوع المشروع / استراحة خاصة 
         `,
         folderName:'hamoudElHazmy',
         imgs: ['069.jpg','070.jpg','071.jpg','072.jpg','073.jpg','074.jpg','075.jpg','076.jpg','077.jpg','078.jpg']
@@ -59,8 +59,6 @@ const projects = [
         p:`اسم المشروع / استراحة 
         <br>
         الموقع / حي العمارية 
-        <br>
-        نوع المشروع / استراحة خاصة         
         <br>
         `,
         folderName:'hamoudElHazmy2',
@@ -73,8 +71,6 @@ const projects = [
         <br>
         الموقع / حي النهضة 
         <br>
-        نوع المشروع / فيلا سكنية         
-        <br>
         `,
         folderName:'mohamedAsker',
         imgs: ['01-min.jpg','02-min.jpg','03-min.jpg','04-min.jpg','05-min.jpg','06-min.jpg','07-min.jpg','08-min.jpg','09-min.jpg','010-min.jpg','011-min.jpg','012-min.jpg','013-min.jpg','014-min.jpg']
@@ -86,8 +82,6 @@ const projects = [
         <br>
         الموقع /  المنطقة الشرقية 
         <br>
-        نوع المشروع / قصر         
-        <br>
         `,
         folderName:'palace',
         imgs: ['001.jpg','002.jpg','003.jpg','004.jpg']
@@ -98,8 +92,6 @@ const projects = [
         p:`اسم المشروع / فيلا سكنية 
         <br>
         الموقع / حي النهضة 
-        <br>
-        نوع المشروع / فيلا سكنية         
         <br>
         `,
         folderName:'villaNahda',

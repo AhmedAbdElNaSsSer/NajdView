@@ -193,11 +193,11 @@ function renderLatestNews() {
         <div class="item">
             <div class="valign">
                 <div class="img">
-                    <a href="post.html"><img src="images/blog/${post.img}" alt=""></a>
+                    <a href="post.html?${post.id}"><img src="images/blog/${post.img}" alt=""></a>
                 </div>
             </div>
             <div class="cont">
-                <h6><a href="post.html">${post.title}</a></h6> <span><a href="post.html" class="main-font">${post.date}</a></span>
+                <h6><a href="post.html?${post.id}">${post.title}</a></h6> <span><a href="post.html?${post.id}" class="main-font">${post.date}</a></span>
             </div>
         </div>
         `

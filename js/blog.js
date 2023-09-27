@@ -5,7 +5,21 @@ const categoryList = document.querySelector('.rest')
 const latestNews = document.querySelector('.last-post-thum') 
 const posts = [
     {
+        id:9,
+        filter:'cod',
+        img:'9.jpg',
+        title:'كود البناء السعودي',
+        date:' 15.11.2023 ',
+        category:'كود البناء السعودي',
+        desc:`تعريف كود البناء السعودي:
+        هو مجموعة الاشتراطات والمتطلبات من أنظمة ولوائح تنفذيه​​ وملاحق متعلقة بالبناء والتشييد لضمان السلامة والصحة العامة.
+        
+        أهمية كود البناء السعودي
+        تتطلب المنشآت بكافة أنواعها بوجه عام توفر كود بناء يحدد اشتراطات الأمان والسلامة والراحة في كافة مراحل البناء، ويزداد الأمر أهمية في المملكة العربية السعودية لطبيعتها الجغرافية واختلاف أجواء مناطقها المختلفة فالمناخ الصحراوي الجاف بالداخل والرطوبة العالية في المناطق القريبة من البحر كما أنها تمتاز بشدة الحرارة في أغلب فصول السنة، وتربتها التي تحتوي على نسبه عالية من الاملاح الضارة فيها، إضافة الى وجود ظواهر زلزالية في بعض المناطق الساحلية، وكل هذه العوامل وغيرها تؤثر بوضوح على سلامة المنشآت و استدامتها وحماية المواطنين.ومن هنا جاءت أهمية وجود كود البناء للرفع من جودة البناء والحفاظ على الاقتصاد السعودي من خلال ضمان سلامة المنشآت وقاطنيها ووضع الاشتراطات التي تحدد أسس الدراسات الصحيحة والأساليب الملائمة لظروف وإمكانات المملكة مما يساعد المهندسين والفنيين والمواطنين ويمكنهم من القيام بأعمالهم بطرق سليمة ومأمونة، ويساهم في وضع حد للإختلافات بالآراء المتعددة للجهات التي تعمل في قطاع البناء والتشييد، وذلك عن طريق استخدام وتطبيق قواعد الكود كنظام معترف به على المستوى الوطني واللجوء إليه للفصل بين الخلافات لا قدر الله إن وجدت بني كافه فاعليات مستخدميه.​​​​​​`,
+    },
+    {
         id:1,
+        filter:'chalet',
         img:'1.jpg',
         title:'مشروع استراحة خاصة',
         date:' 15.11.2023 ',
@@ -16,6 +30,7 @@ const posts = [
     },
     {
         id:2,
+        filter:'palace',
         img:'2.jpg',
         title:'مشروع قصر الافراح',
         date:' 14.11.2023 ',
@@ -26,6 +41,7 @@ const posts = [
     },
     {
         id:3,
+        filter:'ketchen',
         img:'3.jpg',
         title:'مشروع كلاود سكوير',
         date:' 13.11.2023 ',
@@ -37,6 +53,7 @@ const posts = [
     },
     {
         id:4,
+        filter:'chalet',
         img:'4.jpg',
         title:'مشروع استراحة خاصة',
         date:' 15.11.2023 ',
@@ -49,6 +66,7 @@ const posts = [
     },
     {
         id:5,
+        filter:'home',
         img:'5.jpg',
         title:'فلل سكنية في حي النهضة',
         date:' 14.11.2023 ',
@@ -60,6 +78,7 @@ const posts = [
     },
     {
         id:6,
+        filter:'home',
         img:'6.jpg',
         title:'فيلا سكنية في مدينة الشقيق',
         date:' 14.11.2023 ',
@@ -71,6 +90,7 @@ const posts = [
     },
     {
         id:7,
+        filter:'ware',
         img:'7.jpg',
         title:'معرض ونقطة بيع',
         date:' 14.11.2023 ',
@@ -82,6 +102,7 @@ const posts = [
     },
     {
         id:8,
+        filter:'home',
         img:'8.jpg',
         title:'فيلا سكنية حي النهضة',
         date:' 14.11.2023 ',
@@ -104,7 +125,7 @@ function getPosts(posts) {
 
 function renderPosts(post) {
     blogContainer.innerHTML += `
-    <div class="con mb-5">
+    <div class="con mb-5 ${post.filter}">
     <img src="images/blog/${post.img}" alt="">
     <div class="date main-font"><span class="ti-tag"></span> ${post.category}</div>
     <div class="title">${post.title}</div>
@@ -189,7 +210,6 @@ function categoryCounter() {
             li.children[1].firstChild.textContent = posts.length
         } else {
             let categoryNumber = posts.filter(post => {
-                console.log('post: ', post);
                 return li.children[0].textContent == post.category
             })
             li.children[1].textContent = categoryNumber.length

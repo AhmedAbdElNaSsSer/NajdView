@@ -206,6 +206,15 @@ function renderLatestNews() {
 
 function categoryCounter() {
     categorySection.map(li => {
+        let anchor = li.children[0]
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault()
+            console.log('anchor: ', anchor);
+            categorySection.map((singleLi) => {
+                singleLi.children[0].classList.remove('active')
+            })
+            anchor.classList.add('active')
+        })
         if (li.children[0].textContent == 'الكل') {
             li.children[1].firstChild.textContent = posts.length
         } else {

@@ -3771,6 +3771,10 @@ input[type="checkbox"] {
     color: var(--main-color);
 }
 
+.sidebar .widget.category li span a.active{
+    color: var(--main-color);
+}
+
 .sidebar .widget.category li:last-of-type {
     margin-bottom: 0;
 }
@@ -3901,6 +3905,14 @@ input[type="checkbox"] {
 
 .blog .pagination-wrap li a i {
     font-size: 11px;
+}
+
+.blog a {
+    color: #000;
+}
+
+.blog a.active {
+    color: var(--main-color);
 }
 
 .post .date {

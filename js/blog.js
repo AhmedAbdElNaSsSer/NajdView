@@ -265,8 +265,6 @@ $('#pagination-container').pagination({
     showPrevious: true,
     showNext: true,
     callback: function(data, pagination) {
-        console.log('data: ', data);
-        // template method of yourself
         getPosts(data)
     }
 })

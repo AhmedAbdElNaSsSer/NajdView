@@ -261,7 +261,7 @@ function categoryCounter() {
 
 $('#pagination-container').pagination({
     dataSource: posts,
-    pageSize: 2,
+    pageSize: 3,
     showPrevious: true,
     showNext: true,
     callback: function(data, pagination) {

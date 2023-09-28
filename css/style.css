@@ -4639,6 +4639,11 @@ input[type="checkbox"] {
     -ms-transition: .3s;
     -o-transition: .3s;
 }
+.paginationjs-page a,.paginationjs-next a,.paginationjs-prev a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .paginationjs-page.active, .paginationjs-page:hover, .paginationjs-next:hover, .paginationjs-prev:hover {
     background-color: transparent;
     border: 1px solid var(--main-color);

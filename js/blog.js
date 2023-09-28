@@ -264,6 +264,9 @@ $('#pagination-container').pagination({
     pageSize: 3,
     showPrevious: true,
     showNext: true,
+    showNavigator: true,
+    formatNavigator: `<div class="test"><span class="main-font"><%= rangeEnd %>-<%= rangeStart %></span> مقال من <span class="main-font"><%= totalNumber %></span> مقالات</div>`,
+    position: 'bottom',
     callback: function(data, pagination) {
         getPosts(data)
     }

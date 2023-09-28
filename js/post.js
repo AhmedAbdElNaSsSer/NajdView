@@ -151,7 +151,7 @@ function getPost() {
 function renderPost(post) {
     postContainer.innerHTML = `
     <img loading="lazy"  src="images/blog/${post.img}" class="img-responsive mb-5" alt="">
-    <div class="date"> <span class="ti-tag"></span>  <p class="main-font d-inline fw-normal">${post.date}</p>  <span class="ti-time"></span><p class="d-inline">${post.category}</p></div>
+    <div class="date"> <span class="ti-time"></span><p class="d-inline">${post.category}</p></div>
     <h2>${post.title}</h2>
     <p>
         ${post.desc}</p>

@@ -1,4 +1,4 @@
-const blogContainer = document.querySelector('.blog .wrap')
+const blogContainer = document.querySelector('#posts-container')
 const searchBox = document.querySelector('.search-box input')
 const categorySection = Array.from(document.querySelectorAll('.sidebar .rest li'))
 const categoryList = document.querySelector('.rest')
@@ -146,11 +146,12 @@ const posts = [
 const latestPosts = [...posts]
 
 function getPosts(posts) {
+    blogContainer.innerHTML = '';
     posts.map((post) => {
         renderPosts(post)
         
     })
-} getPosts(posts) 
+}
 
 function renderPosts(post) {
     blogContainer.innerHTML += `
@@ -255,3 +256,17 @@ function categoryCounter() {
         
     })
 } categoryCounter()
+
+// Initialize pagination.js with the fakePosts array
+
+$('#pagination-container').pagination({
+    dataSource: posts,
+    pageSize: 2,
+    showPrevious: true,
+    showNext: true,
+    callback: function(data, pagination) {
+        console.log('data: ', data);
+        // template method of yourself
+        getPosts(data)
+    }
+})

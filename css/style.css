@@ -3587,7 +3587,7 @@ input[type="checkbox"] {
 
 .blog-home .item .post-img .img {
     overflow: hidden;
-    height: 400px;
+    height: 200px;
 }
 
 .blog-home .item .post-img:hover img {
@@ -4648,4 +4648,8 @@ input[type="checkbox"] {
     background-color: transparent;
     border: 1px solid var(--main-color);
     color: var(--main-color);
+}
+.blog-home .cont{
+    box-shadow: -12px 12px 15px 0px #8080802b;
+    border-radius: 5px;
 }

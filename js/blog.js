@@ -161,7 +161,7 @@ function renderPosts(post) {
     <div class="title">${post.title}</div>
     <p class="ptr text-cut">${post.desc}</p>
     <div class="more text-end"><a href="post.html?${post.id}" class="link-btn" tabindex="0" dir="rtl">اقرأ المزيد<i class="ti-arrow-left"></i></a></div>
-</div>
+    </div>
     `
 } 
 

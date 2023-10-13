@@ -88,7 +88,7 @@
         <div class="container">
             <div class="item">
                 <h4 class="mb-4" dir="rtl"><span>راسلنا آلان</span> - طلب التوظيف</h4>
-            <form method="post" class="contact__form" dir="rtl">
+            <form action="https://formsubmit.co/games011555@gmail.com" enctype="multipart/form-data" method="post" class="job__form" dir="rtl">
                 <!-- Form message -->
                 <div class="row">
                     <div class="col-12">
@@ -98,12 +98,18 @@
                 <!-- Form elements -->
                 <div class="row">
                     <div class="col-md-12 form-group">
-                        <select name="" class="px-0" id="jobType">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5502/job.html">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <select name="job" class="px-0" id="job">
                             <option selected disabled>اختر الوظيفة</option>
-                            <option value="">مهندس مساحة</option>
-                            <option value="">مهندس كهرباء</option>
-                            <option value="">مهندس ميكانيكا</option>
-                            <option value="">اخري</option>
+                            <option value="مهندس مساحة">مهندس مساحة</option>
+                            <option value="مهندس كهرباء">مهندس كهرباء</option>
+                            <option value="مهندس ميكانيكا">مهندس ميكانيكا</option>
+                            <option value="اخري">اخري</option>
                         </select>
                     </div>
                     <div class="col-md-6 form-group">
@@ -116,10 +122,10 @@
                         <input name="email" type="email" placeholder="الايميل *" required>
                     </div>
                     <div class="col-md-6 form-group">
-                        <select name="country">
+                        <select name="country" id="country" data-name="country">
                             <option selected disabled value="empty">اختر الدولة *</option>
                             <option  data-value="مصر" value="Egypt">مصر</option>
-                            <option  data-value="الجزائر" value="Algeria">الجزائر</option>
+                            <option selected  data-value="الجزائر" value="Algeria">الجزائر</option>
                             <option  data-value="البحرين" value="Bahrain">البحرين</option>
                             <option  data-value="جزر القمر" value="Comoros">جزر القمر</option>
                             <option  data-value="جيبوتي" value="Djibouti">جيبوتي</option>
@@ -141,19 +147,19 @@
                         </select>
                     </div>
                     <div class="col-md-6 form-group notall">
-                        <select name="city" class="dis">
+                        <select name="city" class="dis" data-name="city" id="city">
                             <option value="empty" selected disabled>المدينة *</option>
                         </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <select name="subject" id="subject">
-                            <option value="empty">المؤهل العلمي</option>
-                            <option value="empty">التعليم الابتدائي</option>
-                            <option value="empty">التعليم المتوسط</option>
-                            <option value="empty">التعليم الثانوي</option>
-                            <option value="empty">حاصل على البكالوريوس</option>
-                            <option value="empty">حاصل على الماجستير</option>
-                            <option value="empty">حاصل على الدكتوراه</option>
+                        <select name="grade" id="grade">
+                            <option value="المؤهل العلمي">المؤهل العلمي</option>
+                            <option value="التعليم الابتدائي">التعليم الابتدائي</option>
+                            <option value="التعليم المتوسط">التعليم المتوسط</option>
+                            <option value="التعليم الثانوي">التعليم الثانوي</option>
+                            <option value="حاصل على البكالوريوس">حاصل على البكالوريوس</option>
+                            <option value="حاصل على الماجستير">حاصل على الماجستير</option>
+                            <option value="حاصل على الدكتوراه">حاصل على الدكتوراه</option>
                         </select>
                     </div>
                     <div class="col-md-6 form-group">
@@ -183,7 +189,7 @@
                         </select>
                     </div>
                     <div class="col-md-12 form-group">
-                        <input type="file" name="" id="">
+                        <input type="file" name="attachment" accept="image/png, image/jpeg">
                     </div>
                     <div class="col-md-12 form-group">
                         <textarea name="message" id="message" cols="30" rows="4" placeholder="تفاصيل أخرى "></textarea>
@@ -207,7 +213,7 @@
                         <div class="col-md-8">
                             <div class="section-title">فلنناقش مشروعك الخاص</div>
                             <p>املئ البيانات المطلوبة من فضلك وسوف يقوم موظفينا بالرد عليك في اقرب وقت</p>
-                            <form method="post" class="contact__form">
+                            <form  class="contact__form">
                                 <!-- Form message -->
                                 <div class="row">
                                     <div class="col-12">

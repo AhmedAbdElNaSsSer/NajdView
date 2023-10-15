@@ -689,6 +689,7 @@ function citiesInCountries() {
 
 const inputs = document.querySelectorAll('input[data-type=number]'); // Replace this with your input value
 const regex = /^[0-9]+$/;
+console.log('regexs: ', regex);
 
 function dontTypeString() {
     inputs.forEach((input) => {
@@ -701,6 +702,4 @@ function dontTypeString() {
         })
     })    
 } dontTypeString()
-
-
 

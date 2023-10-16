@@ -256,20 +256,29 @@
                         <div class="col-md-8">
                             <div class="section-title">فلنناقش مشروعك الخاص</div>
                             <p>إملأ البيانات المطلوبة من فضلك وسوف يقوم موظفينا بالرد عليك في اقرب وقت</p>
-                            <form  class="contact__form">
+                            <form class="contact__form" action="https://api.staticforms.xyz/submit" method="post">
                                 <!-- Form message -->
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="alert alert-success contact__msg" style="display: none" role="alert"> Your message was sent successfully. </div>
+                                        <!-- <div class="alert alert-success contact__msg" style="display: none" role="alert"> Your message was sent successfully. </div> -->
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input type="hidden" name="accessKey" value="c9b9033e-2574-4b23-b09a-8cb7910928f9">
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input name="subject" type="hidden" placeholder="الموضوع *" value="طلب تواصل خاص">
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <input name="$message" type="hidden" placeholder="الموضوع *" value="السلام عليكم .. اريد التواصل مع شركة نجد فيو للعمل علي مشروع خاص">
                                     </div>
                                 </div>
                                 <!-- Form elements -->
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <input class="line-gray" name="name" type="text" placeholder="الاسم بالكامل *" required="">
+                                        <input class="line-gray" name="name" type="text" placeholder="الاسم بالكامل *" required>
                                     </div>
                                     <div class="col-md-3 form-group">
-                                        <input class="line-gray main-font" name="phone" type="text" data-type="number" placeholder="رقم الجوال *" required="">
+                                        <input class="line-gray main-font" name="phone" type="text" data-type="number" placeholder="رقم الجوال *" required>
                                     </div>
                                     <div class="col-md-2">
                                         <input class="line-gray" name="submit" type="submit" value="ارسال">
@@ -295,7 +304,7 @@
                         <div class="col-md-4">
                             <div class="item">
                                 <h3> <span>مقر</span> الرياض</h3>
-                                <p>2829 طريق الملك عبد الله بن العزيز حي الملك فيصل 
+                                <p>2829 طريق الملك عبد الله بن عبد العزيز حي الملك فيصل 
                                 <br>
                                 الرياض <span class="main-font">13215</span>
                                 <br>
